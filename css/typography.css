@@ -1,0 +1,96 @@
+body {
+    font-family: 'Avenir', 'Hiragino Sans', 'Roboto', 'メイリオ', Meiryo, 'sans-serif';
+}
+
+.pagetitle {
+    /* JP/pagetitle */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+}
+
+.pop-up_title {
+    /* JP/pop-up title */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.copy {
+    /* JP/copy */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.subcopy {
+    /* JP/subcopy */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.description {
+    /* JP/discription */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.section_title {
+    /* JP/section title */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.caption {
+    /* JP/caption */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+/* responsive */
+@media screen and (max-width: 900.5px) {
+    .description {
+        line-height: 200%;
+    }
+}
+
+@media screen and (max-width: 375.5px) {
+    .pagetitle {
+        font-size: 24px;
+    }
+
+    .pop-up_title {
+        font-size: 20px;
+    }
+
+    .copy {
+        font-size: 16px;
+    }
+
+    .subcopy {
+        font-size: 14px;
+    }
+
+    .section_title {
+        font-size: 14px;
+    }
+
+    .caption {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

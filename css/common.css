@@ -1,0 +1,347 @@
+body {
+    height: 100%;
+    position: relative;
+    background: var(--background-color-white);
+    /* font-size-adjust: 0.8; */
+}
+
+/* header */
+
+header {
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    /* sticky */
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+
+    background: var(--background-color-white);
+
+    /* Shadow/main */
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+
+#header_logo {
+    /* window 基準 */
+    position: absolute;
+    /* width: 310.22px; */
+    height: 24px;
+    left: 20px;
+    top: 20.5px;
+}
+
+#pc_header_right {
+    display: flex;
+    justify-content: flex-end;
+    /* 右寄せ */
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    padding-top: 18px;
+    padding-right: 49px;
+    gap: 32px;
+}
+
+.header_right_toc {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+.header_right_toc_top {
+    color: var(--base-color-secondary);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+.header_right_toc_faq {
+    color: var(--base-color-secondary);
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+}
+
+.header_right_button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 10px;
+
+    /* Brand/primary */
+    background: var(--brand-color-primary);
+    border-radius: 1000px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+}
+
+.header_right_button_text {
+    color: var(--base-color-tertiary);
+    text-align: center;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    /* height: 342px; */
+
+    background-color: var(--brand-color-primary);
+}
+
+.footer_menu {
+    padding: 60px;
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer_logo {
+    width: 310.22px;
+    height: 40px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.footer_about {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    color: var(--base-color-on-primary);
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.footer_toc {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    color: var(--base-color-on-primary);
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.footer_toc_top {
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+}
+
+.footer_toc_faq {
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+}
+
+.footer_button {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+
+    background: var(--base-color-on-primary);
+    border-radius: 1000px;
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.footer_button_text {
+    text-align: center;
+
+    color: var(--base-color-primary)
+}
+
+.footer_copyright {
+    padding-bottom: 27px;
+    text-align: center;
+    color: var(--base-color-on-primary);
+}
+
+
+/* responsive */
+@media screen and (max-width: 900.5px) {
+    header {
+        height: 44px;
+    }
+
+    #header_logo {
+        position: absolute;
+        width: 186.13px;
+        height: 24px;
+        left: 22px;
+        top: 10px;
+    }
+
+    #pc_header_right {
+        display: none;
+    }
+
+    #phone_header_right {
+        display: flex;
+        justify-content: flex-end;
+        /* 右寄せ */
+        flex-direction: row;
+        align-items: center;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    #phone_header_right_3 {
+        transform: all 0.3s;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 12px;
+        gap: 0px;
+    }
+
+    #phone_header_right_3 span {
+        z-index: 2;
+        display: block;
+        height: 2.5px;
+        width: 20px;
+        margin: 3px 0;
+        background-color: var(--brand-color-secondary);
+        transition: all 0.3s;
+    }
+
+    #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(1) {
+        transform: translateY(8.5px) rotate(45deg);
+        background-color: var(--base-color-primary);
+    }
+
+    #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #phone_header_right_x:checked~#phone_header_right_3 span:nth-child(3) {
+        transform: translateY(-8.5px) rotate(-45deg);
+        background-color: var(--base-color-primary);
+    }
+
+    #phone_header_right_menu {
+        position: fixed;
+        right: -120%;
+        top: 43px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.85);
+        opacity: 0.85;
+        border-radius: 0px 0px 0px 10px;
+        transition: all 0.3s;
+        gap: 16px;
+        padding: 8px;
+    }
+
+    #phone_header_right_x:checked~#phone_header_right_menu {
+        right: 0px;
+    }
+
+    .phone_header_right_menu_group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: var(--base-color-secondary);
+        gap: 16px;
+    }
+
+    .header_right_button {
+        padding: 0px 10px;
+        height: 34px;
+        border-radius: 20px;
+    }
+
+
+    .footer_menu {
+        padding: 44px;
+        gap: 48px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #footer_logo {
+        width: min(70vw, 310.22px);
+        height: calc(min(70vw, 310px) * 40 / 310.22);
+        flex-grow: 1;
+        order: 0;
+    }
+
+    .footer_about {
+        gap: 24px;
+        flex-grow: 1;
+        order: 2;
+    }
+
+    .footer_button {
+        /* margin-right: 5vw; */
+        order: 1;
+    }
+
+    .footer_toc {
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        color: var(--base-color-on-primary);
+
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+    }
+}
+
+@media screen and (min-width: 900.5px) {
+    #phone_header {
+        display: none;
+    }
+}
