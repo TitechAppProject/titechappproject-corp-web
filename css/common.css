@@ -108,22 +108,16 @@ footer {
     width: 100%;
     /* height: 342px; */
 
-    background-color: var(--brand-color-primary);
+    background-color: var(--base-color-tertiary);
 }
 
 .footer_menu {
     padding: 60px;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 #footer_logo {
-    width: 310.22px;
-    height: 40px;
+    width: 185.71px;
+    height: 24px;
 
     flex: none;
     order: 0;
@@ -135,18 +129,17 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    padding:32px 0px;
+    gap: 16px;
 
-    color: var(--base-color-on-primary);
+    color: var(--base-color-primary);
 
     flex: none;
     order: 1;
     flex-grow: 0;
 }
 
-.footer_toc {
-    /* Auto layout */
+/* .footer_toc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -158,7 +151,7 @@ footer {
     flex: none;
     order: 2;
     flex-grow: 0;
-}
+} */
 
 .footer_toc_top {
     /* Inside auto layout */
@@ -196,14 +189,12 @@ footer {
 }
 
 .footer_copyright {
-    padding-bottom: 27px;
-    text-align: center;
-    color: var(--base-color-on-primary);
+    color: var(--base-color-primary);
 }
 
 
 /* responsive */
-@media screen and (max-width: 900.5px) {
+/* @media screen and (max-width: 900.5px) {
     header {
         height: 44px;
     }
@@ -223,7 +214,6 @@ footer {
     #phone_header_right {
         display: flex;
         justify-content: flex-end;
-        /* 右寄せ */
         flex-direction: row;
         align-items: center;
         margin: 0px;
@@ -321,12 +311,11 @@ footer {
     }
 
     .footer_button {
-        /* margin-right: 5vw; */
         order: 1;
     }
 
     .footer_toc {
-        /* Auto layout */
+    
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -345,4 +334,4 @@ footer {
     #phone_header {
         display: none;
     }
-}
+} */

@@ -19,11 +19,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    /* :root {
-        --brand-color-primary: #409eba;
-    } */
-
-    .main {
+    :root {
         --base-color-primary: #ffffff;
         --base-color-secondary: #a0a0a0;
         --base-color-tertiary: #373737;
@@ -34,11 +30,5 @@
 
         --white-unchanged: #ffffff;
         --black-unchanged: #333333;
-    }
-
-    .main_service_card_button_text, .main_invite {
-        --base-color-primary: #333333;
-        --base-color-white: #ffffff;
-        --background-color-white: #ffffff;
     }
 }
