@@ -1,7 +1,9 @@
 body {
     height: 100%;
+    width: 834px;
     position: relative;
-    background: var(--background-color-white);
+    background: var(--background-color-secondary);
+    margin: 0 auto;
     /* font-size-adjust: 0.8; */
 }
 
@@ -16,7 +18,7 @@ header {
     /* sticky */
     position: -webkit-sticky;
     position: sticky;
-    z-index: 1;
+    z-index: 150;
 
     background: var(--background-color-primary);
 
