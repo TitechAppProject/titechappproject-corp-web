@@ -3,52 +3,58 @@
 .top {
     width: 100%;
     height: 434px;
+    position: relative;
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
 
+.fv_title {
+    z-index: 100;
+    position: absolute;
+    top: 158px;
+    left: 70px;
+    transform: translate(0%, -50%);
+    color: var(--base-color-on-primary);
+}
+
+.fv_subcopy {
+    z-index: 100;
+    position: absolute;
+    top: 296px;
+    left: 70px;
+    transform: translate(0%, -50%);
+    color: var(--base-color-on-primary);
+}
+
+.fv_mockup {
+    z-index: 100;
+    position: absolute;
+    top: 81px;
+    left: 402px;
+}
+
+.top_background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    /* flex-wrap: wrap; */
 }
 
 .top_back_left {
     flex: 1;
     height: 100%;
     background: var(--brand-color-primary);
-    position: relative;
-}
-
-.fv_copy {
-    position: absolute;
-    top: 50%;
-    left: 70px;
-    transform: translate(0%, -50%);
-    
-}
-
-.fv_title {
-    color: var(--base-color-on-primary);
-    padding-bottom: 48px;
-}
-
-.fv_subcopy {
-    color: var(--base-color-on-primary);
 }
 
 .top_back_center {
     width: 251px;
     height: 100%;
     background: linear-gradient(to bottom right, var(--brand-color-primary) 50%, #3687a5 50%);
-    position: relative;
-}
-
-.fv_mockup {
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-inline-size: 362px;
 }
 
 .top_back_right {
@@ -56,7 +62,6 @@
     height: 100%;
     background: #3687a5;
     position: relative;
-    overflow: hidden;
 }
 
 .overlay_logo {
@@ -77,121 +82,6 @@
     /* z-index: 10; */
 }
 
-/* .my-parts {
-	display: inline-block;
-	padding: .8em 1.6em .4em .8em;
-	position: relative;
-	z-index: 1;
-}
-.my-parts::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	background: #3286A1;
-	transform: scaleY(1.3) perspective(.6em) rotateX(1deg);
-	transform-origin: bottom right;
-	border-radius: 8px 8px 0 0;
-} */
-
-.daikei {
-    display: inline-block;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    z-index: 1;
-}
-
-.daikei::after {
-    content: '';
-    position: absolute;
-    width: 174px;
-    height: 0;
-    border-bottom: 434px solid #ccc;
-    border-left: 254px solid transparent;
-    z-index: -1;
-}
-
-.trapezoid {
-    position: relative;
-    width: 200px; /* 台形の幅 */
-    height: 0;
-    border-bottom: 100px solid blue; /* 台形の下辺の色と高さ */
-    border-left: 50px solid transparent; /* 台形の左斜辺 */
-    border-right: 50px solid transparent; /* 台形の右斜辺 */
-}
-
-/* 追加：台形の影 */
-.trapezoid::after {
-    content: '';
-    position: absolute;
-    bottom: -10px; /* 影の位置 */
-    left: 0;
-    width: 100%; /* 影の幅 */
-    height: 10px; /* 影の高さ */
-    background: rgba(0, 0, 0, 0.5); /* 影の色 */
-}
-
-.top_left {
-    /* Auto layout */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    padding-left: 72px;
-}
-
-.top_left_copy {
-    width: 300px;
-    color: var(--base-color-on-primary);
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-}
-
-.top_left_text {
-    color: var(--base-color-on-primary);
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-}
-
-.top_left_button {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px;
-
-    /* width: 208px;
-    height: 44px; */
-
-    /* Base/white */
-    background: var(--background-color-on-primary);
-    /* Shadow/main */
-
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-    border-radius: 1000px;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 2;
-}
-
-.top_left_button_text {
-    /* Base/primary */
-    color: var(--base-color-primary);
-    text-align: center;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-}
 
 /* main - common part */
 
@@ -658,7 +548,45 @@
 }
 
 
+/*responsive*/
+@media screen and (max-width: 834px) {
+    .top {
+        height: 547px;
+    }
 
+    .top_back_center {
+        width: 147px;
+    }
+
+    .top_back_right {
+        width: 103px;
+    }
+
+    .fv_title {
+        position: absolute;
+        top: 121px;
+        left: 32px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+    
+    .fv_subcopy {
+        position: absolute;
+        top: 494px;
+        left: 32px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+
+    .fv_mockup {
+        top: 159px;
+        left: 25px;
+    }
+
+    .overlay_logo {
+        transform: translate(-35%, -50%);
+    }
+}
 
 /* responsive */
 /* @media screen and (max-width: 900.5px) {
@@ -775,7 +703,7 @@
     }
 } */
 
-@media screen and (max-width: 375.5px) {
+/* @media screen and (max-width: 375.5px) {
     .top_left_button_text {
         font-size: clamp(10px, 4.3vw, 16px);
     }
@@ -824,7 +752,7 @@
     .br_top {
         display: none;
     }
-}
+} */
 
 @media (prefers-color-scheme: dark) {
     header {

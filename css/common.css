@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    width: 834px;
+    max-width: 834px;
     position: relative;
     background: var(--background-color-secondary);
     margin: 0 auto;
