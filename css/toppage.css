@@ -196,6 +196,12 @@
 }
 
 .download_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.dl_button {
     
 }
 
@@ -585,6 +591,17 @@
 
     .overlay_logo {
         transform: translate(-35%, -50%);
+    }
+
+    .main {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 32px;
+        gap: 80px;
+    }
+
+    .main_part {
+        gap: 16px;
     }
 }
 
