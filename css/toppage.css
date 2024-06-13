@@ -190,6 +190,11 @@
     justify-content: center;
 }
 
+.infowebimage {
+    display: flex;
+    justify-content: center;
+}
+
 .products_description {
     color: var(--base-color-primary);
     padding: 16px 0;
@@ -553,9 +558,13 @@
     color: var(--brand-color-primary);
 }
 
+.subcopy_br {
+    display: initial;
+}
+
 
 /*responsive*/
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 530px) {
     .top {
         height: 547px;
     }
@@ -603,6 +612,94 @@
     .main_part {
         gap: 16px;
     }
+
+    .subcopy_br {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 531px) and (max-width: 600px) {
+    .top {
+        height: 613px;
+    }
+
+    .top_back_center {
+        width: 172px;
+    }
+
+    .top_back_right {
+        width: 132px;
+    }
+
+    .fv_title {
+        position: absolute;
+        top: 128px;
+        left: 64px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+
+    .fv_mockup {
+        top: 182px;
+        left: 64px;
+        
+    }
+
+    .fv_subcopy {
+        position: absolute;
+        top: 502px;
+        left: 64px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+
+    .subcopy_br {
+        display: initial;
+    }
+
+    .overlay_logo {
+        transform: translate(-36%, -50%);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 770px) {
+    .top {
+        height: 613px;
+    }
+
+    .top_back_center {
+        width: 172px;
+    }
+
+    .top_back_right {
+        width: 132px;
+    }
+
+    .fv_title {
+        position: absolute;
+        top: 128px;
+        left: 64px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+
+    .fv_mockup {
+        top: 182px;
+        left: 64px;
+    }
+
+    .fv_subcopy {
+        position: absolute;
+        top: 502px;
+        left: 64px;
+        transform: translate(0%, -50%);
+        color: var(--base-color-on-primary);
+    }
+
+    .subcopy_br {
+        display: none;
+    }
+    
 }
 
 /* responsive */
