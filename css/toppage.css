@@ -870,7 +870,6 @@
 
 @media (prefers-color-scheme: dark) {
     header {
-        background-color: #333333;
         box-shadow: none;
     }
 
