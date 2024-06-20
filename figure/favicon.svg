@@ -1,18 +1,17 @@
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="10.6667" fill="#3B91AC"/>
-<line x1="11.1719" y1="59.375" x2="68.75" y2="59.375" stroke="white" stroke-width="4.53125" stroke-linecap="round"/>
-<mask id="path-3-inside-1_213_610" fill="white">
-<rect x="28.8359" y="18.3594" width="22.2656" height="43.2812" rx="1.5625"/>
+<svg width="298" height="208" viewBox="0 0 298 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="10.8619" y1="196.638" x2="286.904" y2="196.638" stroke="#58ACC7" stroke-width="21.7238" stroke-linecap="round"/>
+<mask id="path-2-inside-1_635_76" fill="white">
+<rect x="95.51" width="106.746" height="207.5" rx="7.49097"/>
 </mask>
-<rect x="28.8359" y="18.3594" width="22.2656" height="43.2812" rx="1.5625" stroke="white" stroke-width="9.0625" mask="url(#path-3-inside-1_213_610)"/>
-<mask id="path-4-inside-2_213_610" fill="white">
-<rect x="15.7812" y="36.7969" width="17.5781" height="24.8438" rx="1.5625"/>
+<rect x="95.51" width="106.746" height="207.5" rx="7.49097" stroke="#58ACC7" stroke-width="43.4477" mask="url(#path-2-inside-1_635_76)"/>
+<mask id="path-3-inside-2_635_76" fill="white">
+<rect x="32.96" y="88.3936" width="84.2735" height="119.106" rx="7.49097"/>
 </mask>
-<rect x="15.7812" y="36.7969" width="17.5781" height="24.8438" rx="1.5625" stroke="white" stroke-width="9.0625" mask="url(#path-4-inside-2_213_610)"/>
-<mask id="path-5-inside-3_213_610" fill="white">
-<rect x="46.5625" y="36.7969" width="17.4219" height="24.8438" rx="1.5625"/>
+<rect x="32.96" y="88.3936" width="84.2735" height="119.106" rx="7.49097" stroke="#58ACC7" stroke-width="43.4477" mask="url(#path-3-inside-2_635_76)"/>
+<mask id="path-4-inside-3_635_76" fill="white">
+<rect x="180.532" y="88.3936" width="83.5244" height="119.106" rx="7.49097"/>
 </mask>
-<rect x="46.5625" y="36.7969" width="17.4219" height="24.8438" rx="1.5625" stroke="white" stroke-width="9.0625" mask="url(#path-5-inside-3_213_610)"/>
-<line x1="39.6094" y1="28.1328" x2="39.6094" y2="32.0391" stroke="white" stroke-width="2.34375" stroke-linecap="round"/>
-<line x1="42.5859" y1="32.1953" x2="39.608" y2="32.1953" stroke="white" stroke-width="2.34375" stroke-linecap="round"/>
+<rect x="180.532" y="88.3936" width="83.5244" height="119.106" rx="7.49097" stroke="#58ACC7" stroke-width="43.4477" mask="url(#path-4-inside-3_635_76)"/>
+<line x1="147.197" y1="46.8184" x2="147.197" y2="65.5459" stroke="#58ACC7" stroke-width="11.2365" stroke-linecap="round"/>
+<line x1="161.474" y1="66.2952" x2="147.197" y2="66.2952" stroke="#58ACC7" stroke-width="11.2365" stroke-linecap="round"/>
 </svg>

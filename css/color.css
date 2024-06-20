@@ -1,7 +1,6 @@
 :root {
     --brand-color-primary: #58acc7;
     --brand-color-secondary: #69cc99;
-    /* --brand-color-gradation: linear-gradient(90deg, #005396 0%, #75CFC1 100%); */
 
     --base-color-primary: #333333;
     --base-color-secondary: #888888;
@@ -13,9 +12,6 @@
     --background-color-tertiary: #e0e0e0;
 
     --accent-color: #e5a894;
-
-    --error-color: #ea3223;
-    --warning-color: #d8ac3d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,8 +23,5 @@
         --background-color-primary: #292626;
         --background-color-secondary: #333333;
         --background-color-tertiary: #373737;
-
-        --white-unchanged: #ffffff;
-        --black-unchanged: #333333;
     }
 }

@@ -5,7 +5,6 @@
     height: 434px;
     position: relative;
     overflow: hidden;
-    /* flex-wrap: wrap; */
 }
 
 .fv_title {
@@ -74,16 +73,6 @@
     max-inline-size: 298px;
 }
 
-#top_right_fig {
-    flex-shrink: 1;
-    flex-grow: 0;
-    width: 362px;
-    height: 276px;
-    /* z-index: 10; */
-}
-
-
-/* main - common part */
 
 .main {
     width: 100%;
@@ -173,10 +162,6 @@
     padding-right: 16px;
 }
 
-.products_name {
-    
-}
-
 .products_mainname {
     color: var(--base-color-primary);
 }
@@ -195,7 +180,7 @@
     justify-content: center;
 }
 
-.products_description {
+.description_text {
     color: var(--base-color-primary);
     padding: 16px 0;
 }
@@ -206,9 +191,6 @@
     gap: 16px;
 }
 
-.dl_button {
-    
-}
 
 .info_button_part {
     width: 100%;
@@ -230,9 +212,6 @@
     padding-left: 4px;
 }
 
-.recruit_description {
-    color: var(--base-color-primary);
-}
 
 .main_sectiontext {
     /* caption */
@@ -252,310 +231,6 @@
 .main_description {
     /* description */
     color: var(--base-color-primary);
-}
-
-/* main - exception */
-/* - services */
-.main_services {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 32px;
-    width: 100%;
-
-    flex: none;
-    order: 0;
-}
-
-.main_services_contents {
-    flex: none;
-    order: 1;
-
-    align-self: stretch;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding: 0px 16px;
-}
-
-.main_service {
-    flex: none;
-    flex-grow: 1;
-}
-
-.main_service_card {
-    flex-grow: 0;
-
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px 24px 24px;
-    gap: 16px;
-
-    /* width: 464px; */
-    /* height: 180px; */
-
-    background: var(--base-color-on-primary);
-    border: 1px solid var(--base-color-tertiary);
-    border-radius: 16px;
-}
-
-.main_service_card_header {
-    align-self: stretch;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 8px;
-}
-
-.main_service_card_title {
-    /* copy */
-    color: var(--base-color-primary);
-    flex-grow: 1;
-    /* width: 280px; */
-}
-
-.main_service_card_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    margin-left: 24px;
-    gap: 10px;
-
-    /* width: 128px;
-    height: 44px; */
-
-    /* Brand/secondary */
-    background: var(--brand-color-secondary);
-    border-radius: 1000px;
-}
-
-.main_service_card_button_text {
-    /* subcopy */
-    color: var(--base-color-on-primary);
-}
-
-.main_service_card_content {
-    align-self: stretch;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 16px;
-
-    /* width: 416px; */
-}
-
-.main_service_card_description {
-    /* caption */
-    color: var(--base-color-primary);
-    width: 210px;
-    flex-grow: 1;
-}
-
-#main_service_titechapp {
-    padding: 0px;
-    width: 80px;
-    height: 80px;
-}
-
-#main_service_titechinfo {
-    padding: 0px;
-    width: 80px;
-    height: 80px;
-}
-
-/* - cando */
-.main_cando_section {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-}
-
-.main_cando_subsection {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 48px;
-}
-
-/* - invite */
-.main_invite {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-
-    flex-wrap: wrap;
-
-    /* height: 160px; */
-    width: 100%;
-    padding: 37px 60px;
-    gap: 32px;
-    background: var(--brand-color-gradation);
-    border-radius: 16px;
-}
-
-.main_invite_text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 8px;
-    flex-grow: 1;
-
-    color: var(--base-color-on-primary);
-}
-
-.main_invite_button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 24px;
-    gap: 10px;
-
-    background: var(--base-color-tertiary);
-    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
-    border-radius: 1000px;
-}
-
-.main_invite_button_text {
-    /* subcopy */
-    color: var(--base-color-primary);
-}
-
-/* - environment */
-.main_environment_subsection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 32px;
-    width: 100%;
-}
-
-.main_environment_subsubsections {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 0px;
-    column-gap: 24px;
-    row-gap: 32px;
-    flex-wrap: wrap;
-
-    width: 100%;
-}
-
-.main_environment_subsubsection {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-
-    width: calc(50vw - 128px - 24px);
-    box-sizing: border-box;
-
-    color: var(--base-color-primary);
-}
-
-/* - faq */
-.main_faq {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 48px;
-    width: 100%;
-}
-
-.faq_text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0px;
-    gap: 56px;
-}
-
-.faq_QA {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-}
-
-.faq_Q {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 13px;
-}
-
-.faq_Q_Q {
-    /* copy */
-    margin-top: -2px;
-    color: var(--brand-color-primary);
-}
-
-.faq_A {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-}
-
-.faq_A_A {
-    /* copy */
-    color: var(--brand-color-secondary);
-}
-
-.faq_A_answer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 2px;
-    gap: 4px;
-}
-
-.faq_text {
-    /* subcopy */
-    color: var(--base-color-primary);
-}
-
-.faq_description {
-    /* description */
-    color: var(--base-color-primary);
-}
-
-
-.faq_br {
-    font-weight: 700;
-}
-
-.faq_bluebr {
-    font-weight: 700;
-    color: var(--brand-color-primary);
 }
 
 .subcopy_br {
@@ -642,7 +317,6 @@
     .fv_mockup {
         top: 182px;
         left: 64px;
-        
     }
 
     .fv_subcopy {
@@ -700,180 +374,4 @@
         display: none;
     }
     
-}
-
-/* responsive */
-/* @media screen and (max-width: 900.5px) {
-    .top {
-        flex-direction: column;
-        align-items: center;
-        padding: 24px 24px 0px;
-        height: 547px;
-        gap: 30px;
-    }
-
-    
-
-    .top_left {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-        padding-left: 4px;
-    }
-
-    .top_left_copy {
-        width: min(300px, 90vw);
-        font-size: clamp(20px, 8vw, 30px);
-    }
-
-    .top_left_text {
-        font-size: clamp(10px, 3.7vw, 16px);
-    }
-
-    .main {
-        gap: 56px;
-        padding: 38px 24px 56px;
-    }
-
-    .main_part {
-        gap: 40px;
-    }
-
-    .main_service_card {
-        padding: 16px;
-    }
-
-    .main_service_card_description {
-        width: 100px;
-        flex-grow: 1;
-    }
-
-
-    .main_cando_section {
-        gap: 16px;
-    }
-
-    .main_cando_subsection {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0px;
-    }
-
-    .main_invite {
-        padding: 24px;
-        gap: 20px;
-        background: var(--brand-color-gradation);
-        border-radius: 16px;
-    }
-
-    .main_invite_title {
-        font-size: 16px;
-    }
-
-    .main_environment_subsection {
-        gap: 20px;
-    }
-
-    .main_environment_subsubsections {
-        flex-direction: column;
-        padding: 0px;
-        gap: 16px;
-    }
-
-    .main_environment_subsubsection {
-        width: 100%;
-        gap: 8px;
-    }
-
-    .main_faq {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-    }
-
-    .faq_text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        padding: 0px;
-        gap: 8px;
-    }
-} */
-
-/* @media screen and (min-width: 599.5px) and (max-width: 900.5px) {
-    .top_left {
-        margin-left: calc(135px - 25%);
-    }
-
-    .main_invite {
-        gap: 16px;
-        flex-wrap: nowrap;
-    }
-
-    .main_invite_button {
-        flex-shrink: 0;
-    }
-} */
-
-/* @media screen and (max-width: 375.5px) {
-    .top_left_button_text {
-        font-size: clamp(10px, 4.3vw, 16px);
-    }
-
-    .main_service {
-        width: 86vw;
-    }
-
-    #main_service_titechapp {
-        width: 20vw;
-        height: 20vw;
-    }
-
-    #main_service_titechinfo {
-        width: 20vw;
-        height: 20vw;
-    }
-
-    .main_service_card_button {
-        margin-left: 5vw;
-        gap: 0px;
-    }
-
-    .main_service_card_button_text {
-        font-size: clamp(10px, 4vw, 20px);
-    }
-}
-
-@media screen and (min-width: 900.5px) {
-    #phone_header_right {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1049.5px) {
-    .main_invite {
-        flex-wrap: nowrap;
-    }
-
-    .main_invite_button {
-        flex-shrink: 0;
-    }
-}
-
-@media screen and (min-width: 1249.5px) {
-    .br_top {
-        display: none;
-    }
-} */
-
-@media (prefers-color-scheme: dark) {
-    header {
-        box-shadow: none;
-    }
-
-    .main_service_card {
-        border: none;
-    }
 }

@@ -1,3 +1,3 @@
-# circle-welcome
+# Titech App Project Circle Corporate Site
 
-[Titech App Project](https://titech.app/) 新歓Webページのテスト用
+[Titech App Project](https://titech.app/) サークルコーポレートサイト
