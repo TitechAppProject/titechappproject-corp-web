@@ -259,7 +259,7 @@
         transform: translate(0%, -50%);
         color: var(--base-color-on-primary);
     }
-    
+
     .fv_subcopy {
         position: absolute;
         top: 494px;
@@ -373,5 +373,5 @@
     .subcopy_br {
         display: none;
     }
-    
+
 }
