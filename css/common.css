@@ -6,6 +6,47 @@ body {
     margin: 0 auto;
 }
 
+main {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+    background: var(--background-color-primary);
+}
+
+@media screen and (max-width: 530px) {
+    main {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 16px;
+    }
+}
+
+h1 {
+    color: var(--brand-color-primary);
+}
+
+h2 {
+    color: var(--base-color-primary);
+}
+
+h3 {
+    color: var(--base-color-primary);
+}
+
+p {
+    color: var(--base-color-primary);
+}
+
+li {
+    color: var(--base-color-primary);
+}
+
+a {
+    color: unset;
+    text-decoration-line: unset;
+}
+
 /* header */
 
 header {

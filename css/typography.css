@@ -10,7 +10,8 @@ body {
     line-height: 150%;
 }
 
-.pop-up_title {
+.pop-up_title,
+h1 {
     /* JP/pop-up title */
     font-style: normal;
     font-weight: 1000;
@@ -18,7 +19,8 @@ body {
     line-height: 150%;
 }
 
-.copy {
+.copy,
+h2 {
     /* JP/copy */
     font-style: normal;
     font-weight: 700;
@@ -26,7 +28,8 @@ body {
     line-height: 150%;
 }
 
-.subcopy {
+.subcopy,
+h3 {
     /* JP/subcopy */
     font-style: normal;
     font-weight: 700;
@@ -50,7 +53,9 @@ body {
     line-height: 150%;
 }
 
-.caption {
+.caption,
+p,
+li {
     /* JP/caption */
     font-style: normal;
     font-weight: 300;
