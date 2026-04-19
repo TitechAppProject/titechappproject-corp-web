@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77R9G7LGGK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-77R9G7LGGK');
+    </script>
+
+    <meta charset="utf-8">
+    <title>FAQ - Titech App Project</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Frequently asked questions and answers about the services provided by Titech App Project.">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Titech App Project">
+    <meta name="og:title" content="FAQ - Titech App Project">
+    <meta name="og:description" content="Frequently asked questions and answers about the services provided by Titech App Project.">
+    <meta name="og:url" content="https://titech.app/en/faq/">
+    <meta name="og:image" content="https://titech.app/figure/OGP.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://titech.app/figure/OGP.png">
+
+    <link rel="apple-touch-icon" href="../../figure/apple-touch-icon.png">
+    <link rel="icon" type="image/jpg" href="../../figure/favicon.jpg">
+    <link rel="icon" type="image/png" href="../../figure/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../../figure/favicon.svg">
+
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/typography.css" type="text/css">
+    <link rel="stylesheet" href="../../css/color.css" type="text/css">
+    <link rel="stylesheet" href="../../css/common.css" type="text/css">
+
+    <style>
+        .faq_item {
+            border-bottom: 1px solid var(--base-color-tertiary);
+            padding: 16px 0;
+        }
+
+        .faq_item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--base-color-primary);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .faq_item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq_item summary::before {
+            content: "Q.";
+            color: var(--brand-color-primary);
+            font-weight: 1000;
+            flex-shrink: 0;
+        }
+
+        .faq_item summary::after {
+            content: "";
+            margin-left: auto;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--base-color-secondary);
+            border-bottom: 2px solid var(--base-color-secondary);
+            transform: rotate(45deg);
+            transition: transform 0.2s;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .faq_item[open] summary::after {
+            transform: rotate(-135deg);
+            margin-top: 8px;
+        }
+
+        .faq_answer {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            color: var(--base-color-primary);
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 170%;
+        }
+
+        .faq_answer::before {
+            content: "A.";
+            color: var(--accent-color);
+            font-weight: 1000;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- common part start -->
+
+    <header>
+        <a href="/en/">
+            <img id="header_logo" src="../../figure/Logo primary.svg" type="image/svg+xml" alt="Titech App Project">
+        </a>
+        <a class="change_languages" href="/faq/">
+            <img id="languages" src="../../figure/language.svg" type="image/svg+xml">
+            <div class="language_name section_title">日本語</div>
+        </a>
+    </header>
+
+    <!-- common part end -->
+
+    <main>
+        <h1>
+            FAQ
+        </h1>
+        <p>
+            Frequently asked questions and answers about TitechApp and the other services provided by Titech App Project. Please check here before contacting us.
+        </p>
+
+        <section>
+            <h2>Login &amp; Authentication</h2>
+            <details class="faq_item">
+                <summary>I entered the correct matrix code, but I still get "Authentication failed" or "Password or matrix is incorrect".</summary>
+                <div class="faq_answer">
+                    First, please verify that you can log in to the Tokyo Tech Portal / Science Tokyo Portal from a browser with the same credentials. If the browser login works, open "More" → "Delete (+Change) Account" in the app to remove the stored credentials, then re-enter your student ID, password, and matrix code. Make sure all 70 matrix cells are entered correctly without extra spaces or full-width digits. If the issue persists, please contact us with a screenshot.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>My matrix code was reissued at the start of a new term. How do I update it in the app?</summary>
+                <div class="faq_answer">
+                    Open the "More" tab → "TokyoTech Account Setting" (or "ScienceTokyo Account Setting" for the Science Tokyo account), paste the new matrix code, and save. If saving does not work, use "Delete (+Change) Account" to clear the existing credentials and then go through the initial setup again with the new information.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>I cannot log in on my new device after changing phones.</summary>
+                <div class="faq_answer">
+                    Install the app on the new device and re-enter your student ID, password, and matrix code. If you have a subscription, sign in with the same Apple ID used at purchase and tap "Restore Purchase". No special export step is needed on the old device.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>I forgot my password.</summary>
+                <div class="faq_answer">
+                    TitechApp cannot reset your password. Please follow the official procedure for the Tokyo Tech Portal / Science Tokyo Portal and contact the campus IT Help Desk to reset it. After resetting, update the new password in "More" → "Account Setting".
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Timetable &amp; Courses</h2>
+            <details class="faq_item">
+                <summary>A course I registered for is not shown in the timetable.</summary>
+                <div class="faq_answer">
+                    Please check the following in order: (1) Confirm that you completed "final registration" on the Kyomu Web / registration system (temporarily saved entries are not reflected). (2) Tap the refresh button (arrow icon) in the top-right corner to fetch the latest data. (3) If it still does not appear, sign out and back in from "More" → "Account Setting". (4) Make sure the course's quarter matches the quarter currently displayed.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>A course I added via "additional declaration" (追加申告) is not reflected.</summary>
+                <div class="faq_answer">
+                    Additional declarations are reflected only after final registration is complete. After final registration, tap the refresh button in the top-right corner. It may take a few hours for the change to appear.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>The quarter display is not switching (e.g. stuck at 1Q when 2Q/3Q should be shown).</summary>
+                <div class="faq_answer">
+                    The timetable quarter is determined automatically from the current date. Around quarter transitions, the previous quarter may still be shown. Tap the refresh button in the top-right corner and try restarting the app. Note that you can pick a quarter manually in the Draft Timetable feature.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>I see display glitches — swollen cell borders, missing course names, etc.</summary>
+                <div class="faq_answer">
+                    This may be a rendering issue tied to a specific iOS version or device size. Try restarting the app, rebooting the device, and updating to the latest version. If the problem persists, please contact us with your device model, OS version, app version, and a screenshot.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Language Settings</h2>
+            <details class="faq_item">
+                <summary>I want to switch the app language between Japanese and English.</summary>
+                <div class="faq_answer">
+                    The app does not have an in-app language switch. Change the language from the iOS "Settings" app → "TitechApp" → "Language", or from the device-wide language settings. Japanese and English are supported.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>File Viewing</h2>
+            <details class="faq_item">
+                <summary>I cannot open PDFs or course materials — I see errors like "File is corrupted" or "278 bytes".</summary>
+                <div class="faq_answer">
+                    This can happen due to an expired session or a temporary server-side issue. Please try: (1) restarting the app; (2) signing in again from "More" → "Account Setting"; (3) if it still fails, open the same file via the Science Tokyo Portal / LMS in a browser (Safari) to verify. If the issue is reproducible, please contact us.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>Files open to a blank white screen in the app.</summary>
+                <div class="faq_answer">
+                    The built-in PDF viewer may have failed to load the file. Use the share button in the top-right to open the file in another app (Safari, Files, etc.) or download it via the browser. If it keeps happening, please contact us with a screenshot and the file type.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Course Reviews</h2>
+            <details class="faq_item">
+                <summary>I posted a review for the wrong course. Can I edit or delete it?</summary>
+                <div class="faq_answer">
+                    The app currently does not allow users to edit or delete their own submitted reviews. Please contact us through the inquiry form with the beginning of your review text and the course you mistakenly posted it to, and we will handle it on our side.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>ScienceTokyo OTP</h2>
+            <details class="faq_item">
+                <summary>I get an error when setting up OTP for the ScienceTokyo account.</summary>
+                <div class="faq_answer">
+                    Set it up from "More" → "ScienceTokyo Account Setting" → "OTP Setting". Issue a secret key on the Science Tokyo Portal's OTP registration page and enter the same key in the app to link them. If you hit an error, please check (1) leading/trailing spaces in the secret key, (2) uppercase/lowercase, and (3) whether the Science Tokyo Portal shows the link as successful.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>I unlinked my OTP (multi-factor) app and now cannot log in to the Science Tokyo Portal.</summary>
+                <div class="faq_answer">
+                    Once OTP is unlinked, recovery from the IT Help Desk is required to log in to the Science Tokyo Portal again. Please contact the campus IT Help Desk. If you previously exported the secret key with the "Export OTP Secret" feature in TitechApp, you can restore it in another authenticator app such as Google Authenticator.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>Which portal does the app log in to — Tokyo Tech or Science Tokyo?</summary>
+                <div class="faq_answer">
+                    Following the university merger, the two login methods coexist. The app switches automatically based on the credentials entered during initial setup; however, LMS and mail go through the Science Tokyo Portal while some content still goes through the Tokyo Tech Portal. You can check the status of both accounts from "More".
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Assignments</h2>
+            <details class="faq_item">
+                <summary>Assignments I hid come back after restarting the app.</summary>
+                <div class="faq_answer">
+                    This may already be fixed in a newer release, so please update the app first. If it still happens, please contact us with the affected course name and the steps you took.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>An assignment I submitted on T2SCHOLA / LMS still shows as "not submitted".</summary>
+                <div class="faq_answer">
+                    It normally takes several minutes to tens of minutes for T2SCHOLA / LMS to reflect a submission. Wait a bit and tap the refresh button in the top-right. If it is still marked unsubmitted, verify the status by logging in to the Science Tokyo Portal / T2SCHOLA / LMS in a browser. If the server shows it as submitted but the app does not, try clearing the cache by reinstalling the app.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Widgets</h2>
+            <details class="faq_item">
+                <summary>The TitechApp matrix-code widget does not appear in the widget picker on the Home Screen.</summary>
+                <div class="faq_answer">
+                    Long-press the iOS Home Screen → tap the "+" button → search for "TitechApp" in the widget picker. If you have never launched the app, or have just reinstalled it, the widget may not appear yet; open the app once and try again.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Subscription</h2>
+            <details class="faq_item">
+                <summary>How do I cancel during the free trial?</summary>
+                <div class="faq_answer">
+                    Cancel from iOS "Settings" → "Apple ID" → "Subscriptions" → "TitechApp". You will not be charged if you cancel during the free trial, and you can keep using the features until the trial ends.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>I already subscribed, but the "Free trial has ended" message keeps showing.</summary>
+                <div class="faq_answer">
+                    Tap "More" → "Restore Purchase". You must be signed in with the same Apple ID used for the purchase. If it still does not clear, please verify your Apple ID's subscription status and contact us with a screenshot.
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>Will I be charged automatically when the trial ends?</summary>
+                <div class="faq_answer">
+                    Yes. Because this is an auto-renewing subscription, billing starts automatically unless you cancel before the trial ends. Cancel from iOS "Settings" → "Subscriptions".
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Account</h2>
+            <details class="faq_item">
+                <summary>What is deleted when I delete my account?</summary>
+                <div class="faq_answer">
+                    "More" → "Delete (+Change) Account" removes all credentials stored in the app on this device — student ID, password, matrix code, OTP secret key, etc. Your university-side account is not affected. Subscriptions are managed by Apple ID and must be canceled separately from iOS Settings.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Placement Requests</h2>
+            <details class="faq_item">
+                <summary>I would like to run a club or event banner inside the app.</summary>
+                <div class="faq_answer">
+                    You can submit a banner from "More" → "Banner Submission". Fill in the desired period, content, and artwork in the form. The TitechApp team will review and decide whether to publish it.
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Other</h2>
+            <details class="faq_item">
+                <summary>How can I contact support?</summary>
+                <div class="faq_answer">
+                    Open the "More" tab in the app and tap "Contact us" to open a Google Form. Device model, OS version, and app version are auto-filled. For bug reports, please attach a screenshot.
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <!-- common part start -->
+
+    <footer>
+        <div class="footer_menu">
+            <a href="/en/"><img id="footer_logo" src="../../figure/Logo primary.svg" type="image/svg+xml" alt="Titech App Project"></a>
+            <div class="footer_about section_title">
+                <a href="https://welcome.titech.app" target="_blank" rel="noopener noreferer">
+                    About Us
+                </a>
+                <a href="https://titech.info/circle" target="_blank" rel="noopener noreferer">
+                    Titech Info
+                </a>
+                <a href="/en/faq/" rel="noopener noreferer">
+                    FAQ
+                </a>
+                <a href="/en/about/" rel="noopener noreferer">
+                    About this site
+                </a>
+                <a href="/en/trademarks/" rel="noopener noreferer">
+                    About Trademarks
+                </a>
+            </div>
+            <div class="footer_copyright caption">
+                Copyright Titech App Project All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- common part end -->
+
+</body>
+
+</html>

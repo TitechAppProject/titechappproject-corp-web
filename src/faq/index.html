@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-77R9G7LGGK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-77R9G7LGGK');
+    </script>
+
+    <meta charset="utf-8">
+    <title>よくある質問 - Titech App Project</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Titech App Project の提供するサービスに関するよくある質問とその回答をまとめています。">
+    <meta name="og:type" content="website">
+    <meta name="og:site_name" content="Titech App Project">
+    <meta name="og:title" content="よくある質問 - Titech App Project">
+    <meta name="og:description" content="Titech App Project の提供するサービスに関するよくある質問とその回答をまとめています。">
+    <meta name="og:url" content="https://titech.app/faq/">
+    <meta name="og:image" content="https://titech.app/figure/OGP.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://titech.app/figure/OGP.png">
+
+    <link rel="apple-touch-icon" href="../figure/apple-touch-icon.png">
+    <link rel="icon" type="image/jpg" href="../figure/favicon.jpg">
+    <link rel="icon" type="image/png" href="../figure/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="../figure/favicon.svg">
+
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/typography.css" type="text/css">
+    <link rel="stylesheet" href="../css/color.css" type="text/css">
+    <link rel="stylesheet" href="../css/common.css" type="text/css">
+
+    <style>
+        .faq_item {
+            border-bottom: 1px solid var(--base-color-tertiary);
+            padding: 16px 0;
+        }
+
+        .faq_item summary {
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            color: var(--base-color-primary);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        .faq_item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq_item summary::before {
+            content: "Q.";
+            color: var(--brand-color-primary);
+            font-weight: 1000;
+            flex-shrink: 0;
+        }
+
+        .faq_item summary::after {
+            content: "";
+            margin-left: auto;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid var(--base-color-secondary);
+            border-bottom: 2px solid var(--base-color-secondary);
+            transform: rotate(45deg);
+            transition: transform 0.2s;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .faq_item[open] summary::after {
+            transform: rotate(-135deg);
+            margin-top: 8px;
+        }
+
+        .faq_answer {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+            color: var(--base-color-primary);
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 170%;
+        }
+
+        .faq_answer::before {
+            content: "A.";
+            color: var(--accent-color);
+            font-weight: 1000;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- common part start -->
+
+    <header>
+        <a href="/">
+            <img id="header_logo" src="../figure/Logo primary.svg" type="image/svg+xml" alt="Titech App Project">
+        </a>
+        <a class="change_languages" href="/en/faq/">
+            <img id="languages" src="../figure/language.svg" type="image/svg+xml">
+            <div class="language_name section_title">English</div>
+        </a>
+    </header>
+
+    <!-- common part end -->
+
+    <main>
+        <h1>
+            よくある質問
+        </h1>
+        <p>
+            TitechApp をはじめとした Titech App Project の提供サービスに関する、よくある質問と回答をまとめています。お問い合わせの前にご確認ください。
+        </p>
+
+        <section>
+            <h2>ログイン・認証</h2>
+            <details class="faq_item">
+                <summary>マトリクスコードを正しく入力しているのに「認証失敗」「パスワードまたはマトリクスが間違っています」と表示されます。</summary>
+                <div class="faq_answer">
+                    まず、東工大ポータル／科学大ポータルのパスワード・マトリクスコードがブラウザからログインできるかご確認ください。ブラウザでログインできる場合は、アプリの「More」→「Delete (+Change) Account」からアカウント情報を一度削除し、再度学籍番号・パスワード・マトリクスコードを入力してください。マトリクスコードは全70マスを正確に入力する必要があります（空白や全角数字が混在していないかご確認ください）。改善しない場合は、スクリーンショットを添付の上お問い合わせください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>新学期・進学でマトリクスコードが更新されました。アプリ側はどう更新すればよいですか？</summary>
+                <div class="faq_answer">
+                    「More」タブ→「TokyoTech Account Setting」（または科学大の場合は「ScienceTokyo Account Setting」）を開き、新しいマトリクスコードを貼り直して保存してください。うまく保存されない場合は、一度「Delete (+Change) Account」でアカウントを削除してから、新しい情報で初期設定をやり直すのが確実です。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>機種変更後、新しい端末でログインできません。</summary>
+                <div class="faq_answer">
+                    アプリを新しい端末にインストールし、学籍番号・パスワード・マトリクスコードを再入力してください。サブスクリプションに加入されている場合は、購入時と同じApple IDでサインインしていれば「Restore Purchase」で復元できます。旧端末のアプリ側で特別なエクスポート手順は不要です。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>パスワードを忘れてしまいました。</summary>
+                <div class="faq_answer">
+                    TitechAppではパスワードのリセットはできません。東工大ポータル／科学大ポータルの公式手順に従い、学内のIT窓口（ITヘルプデスク）でリセットを行ってください。リセット後、アプリの「More」→「Account Setting」で新しいパスワードに更新してください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>時間割・講義</h2>
+            <details class="faq_item">
+                <summary>履修したはずの講義が時間割に表示されません。</summary>
+                <div class="faq_answer">
+                    以下を順にご確認ください。(1) 教務Web／履修登録システムで「本登録」まで完了しているか（一時保存の状態では反映されません）。(2) 画面右上の更新ボタン（矢印アイコン）をタップして最新情報を取得。(3) それでも表示されない場合は「More」→「Account Setting」で一度ログアウト・再ログイン。(4) 科目の開講クォーターと現在表示中のクォーターが一致しているかご確認ください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>追加申告した講義が反映されません。</summary>
+                <div class="faq_answer">
+                    追加申告は本登録が完了してから反映されます。本登録完了後、右上の更新ボタンで最新情報を取得してください。反映には数時間かかる場合があります。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>クォーターの表示が切り替わりません（1Qのまま2Q/3Qにならない等）。</summary>
+                <div class="faq_answer">
+                    時間割のクォーターは現在日時から自動で判定される仕組みです。切替時期の前後では古いクォーターが表示されることがあります。右上の更新ボタンで最新情報を再取得し、アプリ再起動もお試しください。なお、仮時間割（Draft Timetable）では手動でクォーターを選択できます。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>表示が崩れている／枠が膨らんでいる／講義名が表示されないなどの不具合があります。</summary>
+                <div class="faq_answer">
+                    iOSのバージョンや端末サイズ固有の不具合の可能性があります。アプリの再起動・端末再起動・アプリのアップデートをお試しください。改善しない場合は、お使いの機種・OSバージョン・アプリバージョン・スクリーンショットを添付の上お問い合わせください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>言語設定</h2>
+            <details class="faq_item">
+                <summary>アプリを日本語（または英語）に切り替えたいです。</summary>
+                <div class="faq_answer">
+                    アプリ内に言語切替の設定はありません。iOSの「設定」アプリ→「TitechApp」→「言語」から、または端末全体の使用言語設定を変更してください。日本語・英語に対応しています。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>ファイル閲覧</h2>
+            <details class="faq_item">
+                <summary>PDFや講義資料が開けない／「ファイルが破損しています」「278バイト」などと表示されます。</summary>
+                <div class="faq_answer">
+                    セッション切れやサーバー側の一時的な不具合で起きる場合があります。以下をお試しください。(1) アプリの再起動。(2) 「More」→「Account Setting」で再ログイン。(3) それでも開けない場合は、同じファイルをブラウザ（Safari）で科学大ポータル／LMSにログインして開けるかご確認ください。再現する場合はお問い合わせください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>アプリ内でファイルを開くと白い画面のまま表示されません。</summary>
+                <div class="faq_answer">
+                    PDFビューアの読み込み失敗が考えられます。画面右上の共有ボタンからファイルを他のアプリ（Safari・ファイルアプリなど）で開くか、ブラウザ経由でダウンロードしてください。繰り返し発生する場合はスクリーンショット・ファイル種別を添えてお問い合わせください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>講義レビュー</h2>
+            <details class="faq_item">
+                <summary>間違った講義にレビューを投稿してしまいました。修正／削除できますか？</summary>
+                <div class="faq_answer">
+                    現在のアプリには、投稿済みレビューをユーザー自身で修正・削除する機能はありません。お問い合わせフォームから、対象のレビュー内容（書き出しの文言など）と誤投稿先の科目名を明記してご連絡ください。運営側で対応いたします。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>ScienceTokyo OTP</h2>
+            <details class="faq_item">
+                <summary>ScienceTokyo（科学大）アカウントのOTP設定でエラーが出ます。</summary>
+                <div class="faq_answer">
+                    「More」→「ScienceTokyo Account Setting」→「OTP Setting」から設定してください。科学大ポータル側のOTP登録画面でシークレットキーを発行し、アプリ側に同じキーを入力することで連携されます。エラーが出る場合は、(1) シークレットキーの前後の空白、(2) 大文字／小文字、(3) 科学大ポータル側で連携成功が表示されているか、をご確認ください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>OTP（多要素認証）アプリの連携を解除してしまい、科学大ポータルにログインできません。</summary>
+                <div class="faq_answer">
+                    OTP連携を解除した場合、科学大ポータルにログインするためにはITヘルプデスクでの復旧対応が必要です。学内のITヘルプデスクへご相談ください。なお、TitechAppでOTPを設定した際に「Export OTP Secret」機能で控えたシークレットキーをお持ちであれば、他の認証アプリ（Google Authenticatorなど）で復元することも可能です。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>東工大ポータルと科学大ポータルはどちらでログインされていますか？</summary>
+                <div class="faq_answer">
+                    大学の統合に伴い、現在はログイン方式が混在しています。アプリは初期設定時に入力されたアカウントに応じて自動的に使い分けますが、LMSやメールは科学大ポータル経由、一部コンテンツは東工大ポータル経由となる場合があります。「More」から両アカウントの設定状態を確認できます。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>課題</h2>
+            <details class="faq_item">
+                <summary>課題の「非表示」を設定しても、再起動すると再表示されます。</summary>
+                <div class="faq_answer">
+                    最新バージョンで改善されている場合がありますので、まずアプリを最新版にアップデートしてください。改善しない場合は、該当科目名と操作手順をお問い合わせください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>T2SCHOLAやLMSで提出した課題が「未提出」と表示されます。</summary>
+                <div class="faq_answer">
+                    T2SCHOLA／LMS側への反映は通常数分〜十数分かかります。しばらく待ってから右上の更新ボタンを押してください。それでも未提出扱いの場合は、ブラウザで科学大ポータル／T2SCHOLA／LMSに直接ログインして提出状態を確認してください。提出状態が正しいにもかかわらずアプリで未提出表示が続く場合は、キャッシュのクリア（アプリ再インストール）をお試しください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>ウィジェット</h2>
+            <details class="faq_item">
+                <summary>ホーム画面のウィジェット一覧にTitechAppのマトリクスコードウィジェットが表示されません。</summary>
+                <div class="faq_answer">
+                    iOSのホーム画面長押し→「＋」ボタン→ウィジェット検索で「TitechApp」を検索してください。一度もアプリを起動していない／再インストール直後は候補に表示されないことがあるため、アプリを起動してから再度お試しください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>サブスクリプション</h2>
+            <details class="faq_item">
+                <summary>無料期間中に解約したい場合はどうすればよいですか？</summary>
+                <div class="faq_answer">
+                    iOSの「設定」→「Apple ID」→「サブスクリプション」→「TitechApp」から解約できます。無料期間中に解約すれば課金は発生しません。解約後も無料期間終了までは機能をご利用いただけます。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>課金済みなのに「無料期間が終了しました」の表示が消えません。</summary>
+                <div class="faq_answer">
+                    「More」→「Restore Purchase（購入の復元）」をタップしてください。購入時と同じApple IDでサインインしている必要があります。それでも解消しない場合は、Apple IDのサブスクリプション契約状況をご確認の上、スクリーンショットを添えてお問い合わせください。
+                </div>
+            </details>
+            <details class="faq_item">
+                <summary>トライアル期間終了後は自動で課金されますか？</summary>
+                <div class="faq_answer">
+                    はい、自動更新型のサブスクリプションのため、トライアル終了前に解約されない場合は自動で課金が開始されます。解約はiOSの「設定」→「サブスクリプション」から行ってください。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>アカウント</h2>
+            <details class="faq_item">
+                <summary>アカウントを削除すると何が消えますか？</summary>
+                <div class="faq_answer">
+                    「More」→「Delete (+Change) Account」で、アプリ内に保存された学籍番号・パスワード・マトリクスコード・OTPシークレットキーなどの認証情報がすべて端末から削除されます。大学側のアカウント情報は削除されません。サブスクリプションはApple ID側で管理されているため、別途iOS設定からの解約が必要です。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>掲載依頼</h2>
+            <details class="faq_item">
+                <summary>サークル情報やイベント告知をアプリ内バナーに掲載したいです。</summary>
+                <div class="faq_answer">
+                    「More」→「Banner Submission」からバナー掲載の申請が可能です。申請フォームに従って、掲載希望期間・内容・画像などを入力してください。掲載可否はTitechApp運営側で審査します。
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>その他</h2>
+            <details class="faq_item">
+                <summary>お問い合わせはどこからできますか？</summary>
+                <div class="faq_answer">
+                    アプリの「More」タブ→「Contact us」からGoogleフォームが開きます。機種・OSバージョン・アプリバージョンが自動入力されます。不具合の場合はスクリーンショットの添付にご協力ください。
+                </div>
+            </details>
+        </section>
+    </main>
+
+    <!-- common part start -->
+
+    <footer>
+        <div class="footer_menu">
+            <a href="/"><img id="footer_logo" src="../figure/Logo primary.svg" type="image/svg+xml" alt="Titech App Project"></a>
+            <div class="footer_about section_title">
+                <a href="https://welcome.titech.app" target="_blank" rel="noopener noreferer">
+                    サークルについて
+                </a>
+                <a href="https://titech.info/circle" target="_blank" rel="noopener noreferer">
+                    Titech Info
+                </a>
+                <a href="/faq/" rel="noopener noreferer">
+                    よくある質問
+                </a>
+                <a href="/about/" rel="noopener noreferer">
+                    本サイトについて
+                </a>
+                <a href="/trademarks/" rel="noopener noreferer">
+                    商標について
+                </a>
+            </div>
+            <div class="footer_copyright caption">
+                Copyright Titech App Project All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- common part end -->
+
+</body>
+
+</html>
